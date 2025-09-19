@@ -1,1 +1,162 @@
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Left Section */
+.login-section {
+  padding: 40px;
+}
+
+.login-section h2 {
+  font-size: 1.8rem;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #009cde;
+  box-shadow: 0 0 5px rgba(0,156,222,0.3);
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #003087, #009cde);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #002060, #0082b8);
+}
+
+.signup-text {
+  margin: 15px 0;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #009cde;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.divider span {
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin: 0 8px;
+  color: #999;
+}
+
+/* Social Buttons */
+.alt-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.alt-btn:hover {
+  background: #f1f1f1;
+}
+
+.google img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Right Section */
+.info-section {
+  background: linear-gradient(135deg, #003087, #009cde);
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.info-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
