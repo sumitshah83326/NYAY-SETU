@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Issue</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="report-form-container">
+    <h2>Report an Issue</h2>
+    <form onsubmit="event.preventDefault(); submitIssue();">
+      <!-- File Upload -->
+      <label for="photo">Capture/Upload Photo</label>
+      <input type="file" id="photo" name="photo">
+
+      <!-- Location -->
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="">
+      <div class="inline-btns">
+        <button type="button" onclick="autoFillLocation()">Auto-fill Location</button>
+        <button type="button">Pick on Map</button>
+      </div>
+
+      <!-- Description -->
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4" placeholder="Enter description..."></textarea>
+      <div class="inline-btns">
+        <button type="button" onclick="autoFillAI()">AI Suggestion</button>
+      </div>
+
+      <!-- Category -->
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option>Pothole</option>
+        <option>Streetlight</option>
+        <option>Garbage</option>
+        <option>Water Leakage</option>
+        <option>Other</option>
+      </select>
+
+      <!-- Submit -->
+      <div class="submit-btn-container">
+        <button type="submit">Submit Issue</button>
+      </div>
+    </form>
+
+    <!-- Local List of Issues -->
+    <div class="local-reports">
+      <h3>Your Local Reports</h3>
+      <ul id="local-list"></ul>
+    </div>
+  </div>
+</body>
+</html>
