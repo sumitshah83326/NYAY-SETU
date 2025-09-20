@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Map - Nyay Setu</title>
+  <link rel="stylesheet" href="issuemap.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="map-container">
+    <h1>Issue Map</h1>
+    
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <p><img src="icons/pothole.png" alt="Pothole"> Pothole</p>
+      <p><img src="icons/streetlight.png" alt="Streetlight"> Streetlight</p>
+      <p><img src="icons/garbage.png" alt="Garbage"> Garbage</p>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Custom Map Script -->
+  <script src="issuemap.js"></script>
+</body>
+</html>
