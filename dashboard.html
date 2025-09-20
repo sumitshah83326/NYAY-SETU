@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyay Setu - Dashboard</title>
+  <link rel="stylesheet" href="home-style.css">
+  <!-- Leaflet CSS for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header>
+    <div class="top-left">
+      <h2>Nyay Setu</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <!-- Side Menu -->
+    <nav id="side-menu" class="side-menu">
+      <h3 class="menu-title">Nyay Setu</h3>
+      <ul>
+        <li><img src="https://www.shutterstock.com/image-illustration/logout-button-glossy-reflected-symbol-260nw-2315277075.jpg"/> Logout</li>
+        <li><img src="https://img.icons8.com/fluency/24/artificial-intelligence.png"/> AI Chakra</li>
+        <li><img src="https://img.icons8.com/fluency/24/conference-call.png"/> Connect with Others</li>
+        <li><img src="https://static.vecteezy.com/system/resources/previews/007/636/859/non_2x/community-logo-design-free-vector.jpg"/> Make Community</li>
+        <li><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8FAmLXlJZDSLin7um6nAzjFuStCeM0d8GHRpNuFZyxqmLgNve"/> About Us</li>
+        <li><img src="https://static.vecteezy.com/system/resources/previews/052/186/244/non_2x/call-us-icon-whatsapp-3d-free-png.png"/> Contact Us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <h1>Welcome, Sumit Shah</h1>
+      <p>Connect with Nyay Setu – Connect With government officials, track your issues, and get them resolved in the shortest possible time.</p>
+      <button class="primary-btn">Let's Begin</button>
+    </section>
+
+    <!-- Dashboard Buttons -->
+    <section class="dashboard-buttons">
+      <div class="dash-card" onclick="reportIssue()">
+        <img src="https://img.icons8.com/fluency/48/report-card.png" alt="Report Issue">
+        <h3>Report Issue</h3>
+      </div>
+      <div class="dash-card" onclick="myReports()">
+        <img src="https://i.pinimg.com/736x/ba/b0/5a/bab05a6d45cd0b84c576e6d844defc84.jpg" alt="My Report List">
+        <h3>My Report List</h3>
+      </div>
+      <div class="dash-card" onclick="openMap()">
+        <img src="https://www.shutterstock.com/shutterstock/photos/1389948974/display_1500/stock-vector-location-icon-vector-pin-sign-isolated-on-white-background-navigation-map-gps-direction-place-1389948974.jpg" alt="Map">
+        <h3>Map</h3>
+      </div>
+      <div class="dash-card" onclick="aiChakra()">
+        <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI Chakra">
+        <h3>AI Chakra</h3>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2>Issue Map</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <!-- Leaflet JS for Map -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="home-script.js"></script>
+</body>
+</html>
