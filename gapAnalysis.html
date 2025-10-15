@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap Analysis – Gram Bhumi</title>
+  <link rel="stylesheet" href="gap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="top-left">
+      <h2>Gram Bhumi</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav id="side-menu" class="side-menu">
+      <h3 class="menu-title">Gram Bhumi</h3>
+      <ul>
+        <li><img src="icons/logout.png" alt="Logout"> Logout</li>
+        <li><img src="icons/dashboard.png" alt="Dashboard"> Dashboard</li>
+        <li><img src="icons/village.png" alt="Villages"> Villages</li>
+        <li><img src="icons/gap.png" alt="Gap Analysis"> Gap Analysis</li>
+        <li><img src="icons/map.png" alt="Map View"> Map View</li>
+        <li><img src="icons/settings.png" alt="Settings"> Settings</li>
+        <li><img src="icons/help.png" alt="Help"> Help</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section">
+      <h1>Gap Analysis</h1>
+      <p>Analyze infrastructure and service gaps in SC-majority villages.</p>
+      <button class="primary-btn">Start Analysis</button>
+    </section>
+
+    <section class="gap-analysis">
+      <!-- Gap analysis charts and data will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <script src="grambhumi-dashboard.js"></script>
+</body>
+</html>
