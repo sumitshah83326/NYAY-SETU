@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gram Bhumi – Dashboard</title>
+  <link rel="stylesheet" href="dash.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h2>NYAY SETU</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav id="side-menu" class="side-menu">
+      <h3 class="menu-title">Gram Bhumi</h3>
+      <ul>
+        <li><img src="icons/dashboard.png" alt="Dashboard"> Dashboard</li>
+        <li><img src="icons/village.png" alt="Villages"> Villages</li>
+        <li><img src="icons/gap.png" alt="Gap Analysis"> Gap Analysis</li>
+        <li><img src="icons/map.png" alt="Map"> Map View</li>
+        <li><img src="icons/reports.png" alt="Reports"> Reports</li>
+        <li><img src="icons/settings.png" alt="Settings"> Settings</li>
+        <li><img src="icons/logout.png" alt="Logout"> Logout</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section">
+      <h1>Welcome, [User Name]</h1>
+      <p>
+        Map, analyze and monitor infrastructure & services gaps in SC‑majority villages. Plan interventions with insights.
+      </p>
+      <button class="primary-btn">Start Now</button>
+    </section>
+
+    <section class="dashboard-buttons">
+      <div class="dash-card" onclick="goToVillages()">
+        <img src="icons/village.png" alt="Villages">
+        <h3>Villages</h3>
+      </div>
+      <div class="dash-card" onclick="openGapAnalysis()">
+        <img src="icons/gap.png" alt="Gap Analysis">
+        <h3>Gap Analysis</h3>
+      </div>
+      <div class="dash-card" onclick="openMapView()">
+        <img src="icons/map.png" alt="Map View">
+        <h3>Map View</h3>
+      </div>
+      <div class="dash-card" onclick="viewReports()">
+        <img src="icons/reports.png" alt="Reports">
+        <h3>Reports</h3>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Current Map View</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="grambhumi-dashboard.js"></script>
+</body>
+</html>
