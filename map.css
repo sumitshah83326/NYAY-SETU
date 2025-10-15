@@ -1,0 +1,127 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header & Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 24px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h2 {
+  color: #007BFF;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff, #f9f9f9);
+  color: #333;
+  transition: 0.3s;
+  padding-top: 20px;
+  z-index: 1000;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.08);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.side-menu .menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  color: #007BFF;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.side-menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 10px;
+}
+
+.side-menu ul li img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.side-menu ul li:hover {
+  background-color: #eaf2ff;
+  transform: translateX(5px);
+  color: #007BFF;
+}
+
+/* Map Section */
+.map-section {
+  max-width: 960px;
+  margin: 40px auto 60px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  color: #333;
+}
+
+.map-section h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #007BFF;
+}
+
+.map-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#map {
+  height: 480px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-section {
+    margin: 20px 10px 40px;
+    padding: 20px;
+  }
+}
