@@ -1,0 +1,187 @@
+/* Reset & global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.header-left h2 {
+  color: #007BFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #ffffff;
+  color: #333;
+  transition: left 0.3s ease;
+  padding-top: 20px;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.08);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 100;
+}
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu .menu-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  color: #007BFF;
+}
+.side-menu ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.side-menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+.side-menu ul li img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+.side-menu ul li:hover {
+  background-color: #eaf2ff;
+  transform: translateX(5px);
+  color: #007BFF;
+}
+
+/* Main shift when menu open */
+main {
+  transition: margin-left 0.3s ease;
+}
+main.menu-open {
+  margin-left: 260px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+.welcome-section h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.welcome-section p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+.primary-btn {
+  background-color: #fff;
+  color: #007BFF;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.primary-btn:hover {
+  background-color: #007BFF;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Dashboard Cards */
+.dashboard-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 30px;
+}
+.dash-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.dash-card img {
+  width: 55px;
+  margin-bottom: 12px;
+}
+.dash-card h3 {
+  font-size: 1.1rem;
+  color: #007BFF;
+}
+.dash-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Map Section */
+.map-section {
+  padding: 30px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 16px;
+}
+.map-section h2 {
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+#map {
+  height: 420px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .side-menu {
+    width: 200px;
+  }
+  main.menu-open {
+    margin-left: 200px;
+  }
+}
