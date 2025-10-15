@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports – Gram Bhumi</title>
+  <link rel="stylesheet" href="reports.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="top-left">
+      <h2>Gram Bhumi</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav id="side-menu" class="side-menu">
+      <h3 class="menu-title">Gram Bhumi</h3>
+      <ul>
+        <li><img src="icons/logout.png" alt="Logout"> Logout</li>
+        <li><img src="icons/dashboard.png" alt="Dashboard"> Dashboard</li>
+        <li><img src="icons/village.png" alt="Villages"> Villages</li>
+        <li><img src="icons/gap.png" alt="Gap Analysis"> Gap Analysis</li>
+        <li><img src="icons/map.png" alt="Map View"> Map View</li>
+        <li><img src="icons/settings.png" alt="Settings"> Settings</li>
+        <li><img src="icons/help.png" alt="Help"> Help</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reports-section">
+      <h1>Reports</h1>
+      <p>Generate and view detailed reports on SC-majority villages.</p>
+      <div class="report-cards">
+        <div class="card">
+          <h3>Infrastructure Report</h3>
+          <p>Detailed analysis of infrastructure status.</p>
+          <button class="primary-btn">View Report</button>
+        </div>
+        <div class="card">
+          <h3>Service Coverage</h3>
+          <p>Insights into service availability and gaps.</p>
+          <button class="primary-btn">View Report</button>
+        </div>
+        <div class="card">
+          <h3>Financial Overview</h3>
+          <p>Budget allocation and expenditure summary.</p>
+          <button class="primary-btn">View Report</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="grambhumi-dashboard.js"></script>
+</body>
+</html>
